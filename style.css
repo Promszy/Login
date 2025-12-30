@@ -1,3 +1,7 @@
+:root {
+    --black-color: #000000;
+}
+
 @font-face {
     font-family: 'Poppins';
     src: url('Poppins/Poppins-Regular.ttf');
@@ -15,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(image/sun.jpg);
+    background-image: url('image/sun.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -70,7 +74,7 @@ body {
     left: -30px;
     width: 30px;
     height: 30px;
-    border-top-right-radius: 50%
+    border-top-right-radius: 50%; /* Fixed missing semicolon */
     background: transparent;
     box-shadow: 15px 0 0 0 #fff;
 }
@@ -162,14 +166,11 @@ i {
     z-index: 10;
 }
 
-.remember-forgot label {
-  display: flex;
-  font-size: 14px;
-  justify-content: space-between;
-  margin: 10 10px 15px;
-}
-
-  .remember-forgot label {
+.remember-forgot {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin: 10px 10px 15px; /* Fixed missing unit */
     color: #fff;
 }
 
@@ -181,14 +182,14 @@ i {
 .remember-forgot a {
     text-decoration: none;
     color: #fff;
-    margin-right: -33px;
 }
 
 .remember-forgot a:hover {
-  color; f4b342;
+    color: #f4b342; /* Fixed typo */
 }
 
 .input-submit {
+    width: 100%;
     font-size: 16px;
     background-color: #fff;
     color: black;
@@ -221,8 +222,10 @@ i {
 .register a {
     text-decoration: none;
     color: #fff;
+    margin-left: 5px;
 }
 
 .register a:hover {
     color: #f4b342;
 }
+
